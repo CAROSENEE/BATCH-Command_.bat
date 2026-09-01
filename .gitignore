@@ -1,0 +1,11 @@
+# Script-generated output files
+*.log
+log.txt
+*.tmp
+mynotes.txt
+system_log.txt
+ultimatelog.txt
+
+# Windows system files
+Thumbs.db
+Desktop.ini
