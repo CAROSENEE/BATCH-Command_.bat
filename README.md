@@ -70,7 +70,8 @@ BATCH-Command_.bat/
 ├── Class_07/   ← PowerShell integration (powershell-in-bat.bat, ...)
 ├── Class_08/   ← Encryption, compression, backup + carosine_toolkit.bat (v1.0)
 ├── Class_10/   ← Functions, choice, shift, error handling + Modular_Toolkit-main.bat
-└── Class_11/   ← Array task manager, port scanner, Ultimate Toolkit v2.0
+├── Class_11/   ← Array task manager, port scanner, Ultimate Toolkit v2.0
+└── Class_12/   ← PowerShell CIM system info, read-only registry, SysReport collector
 ```
 
 ---
@@ -106,6 +107,7 @@ BATCH-Command_.bat/
 - [x] Array simulation & task manager (Class_11/array-task-manager.bat)
 - [x] Local port scanner (educational) (Class_11/port-scanner.bat)
 - [x] Ultimate Toolkit v2.0 (Class_11/carosine-ultimate-toolkit-v2.bat)
+- [x] System report collector (Class_12/sysreport-collector.bat)
 - [ ] GUI version (PowerShell/WPF)
 - [ ] Log rotation
 
