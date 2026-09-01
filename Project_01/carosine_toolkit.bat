@@ -1,7 +1,7 @@
 @echo off
 setlocal enabledelayedexpansion
 title Carosine Security Toolkit v1.0
-color 0a
+color 0a 
 
 :: ==========================================
 :: CAROSINE SECURITY TOOLKIT
