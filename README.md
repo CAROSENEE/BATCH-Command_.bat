@@ -33,11 +33,11 @@ A **multi-function Windows batch script toolkit** — system info, network scann
 ## 🚀 Usage
 
 ### Method 1: Double-click
-Double-click `Project_01/carosine_toolkit.bat` to run it.
+Double-click `Class_08/carosine_toolkit.bat` to run it.
 
 ### Method 2: Command Prompt
 ```cmd
-cd /d "path\to\Project_01"
+cd /d "path\to\Class_08"
 carosine_toolkit.bat
 ```
 
@@ -60,22 +60,17 @@ Press Ctrl + ` → type carosine_toolkit.bat
 
 ```
 BATCH-Command_.bat/
-├── README.md                       ← This file
-├── Module/                         ← Multi-script modules (call demo)
-│   ├── module-info.bat
-│   ├── network_check.bat
-│   └── backup_tool.bat
-├── Project_01/
-│   └── carosine_toolkit.bat        ← Main toolkit (v1.0)
-├── Project_02/
-│   └── Modular_Toolkit-main.bat    ← Modular toolkit version
-└── (70+ practice scripts covering every topic)
-    ├── basics: variable.bat, set.bat, user.bat, if.bat
-    ├── loops: basic-for_loop.bat, range-for_loop.bat, delayed-expansion.bat
-    ├── files: file-write.bat, file-read+.bat, file-append.bat
-    ├── system: windows-startup.bat, temp-file.bat, scheduling-task.bat
-    ├── security: login-system.bat, file-encryption.bat, defencetool-autorun-scanner.bat
-    └── advanced: Master_script-creating.bat, Error_Handling.bat, shift-argument.bat
+├── README.md
+├── Class_01/   ← Basics: echo, set, variables (variable.bat, basic_batch.bat, ...)
+├── Class_02/   ← Conditions & goto (if.bat, login-system.bat, ...)
+├── Class_03/   ← Loops & delayed expansion (basic-for_loop.bat, ...)
+├── Class_04/   ← File read/write/append (file-write.bat, create-CSV_file.bat, ...)
+├── Class_05/   ← Temp/hidden files & startup (temp-file.bat, windows-startup.bat, ...)
+├── Class_06/   ← schtasks, keylogger concepts, autorun scanner
+├── Class_07/   ← PowerShell integration (powershell-in-bat.bat, ...)
+├── Class_08/   ← Encryption, compression, backup + carosine_toolkit.bat (v1.0)
+├── Class_10/   ← Functions, choice, shift, error handling + Modular_Toolkit-main.bat
+└── Class_11/   ← Array task manager, port scanner, Ultimate Toolkit v2.0
 ```
 
 ---
@@ -108,9 +103,9 @@ BATCH-Command_.bat/
 
 ## 📌 Roadmap (Future Updates)
 
-- [ ] Array simulation & task manager
-- [ ] Local port scanner (educational)
-- [ ] Ultimate Toolkit v2.0
+- [x] Array simulation & task manager (Class_11/array-task-manager.bat)
+- [x] Local port scanner (educational) (Class_11/port-scanner.bat)
+- [x] Ultimate Toolkit v2.0 (Class_11/carosine-ultimate-toolkit-v2.bat)
 - [ ] GUI version (PowerShell/WPF)
 - [ ] Log rotation
 
