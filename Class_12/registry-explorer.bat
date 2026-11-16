@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 title Registry Explorer - READ ONLY (Class 12)
 color 0b
-
+    
 :: ==========================================
 :: CLASS 12 - PART 2: REGISTRY BASICS (READ ONLY)
 ::
@@ -13,7 +13,7 @@ color 0b
 :: In this class we ONLY use "reg query" (read).
 :: "reg add" / "reg delete" can break Windows if misused.
 :: ==========================================
-
+   
 :menu
 cls
 echo ==========================================
@@ -28,7 +28,7 @@ echo  [5] Export a key to .reg file (backup)
 echo  [6] Exit
 echo.
 choice /c 123456 /m "Select: "
-
+    
 if %errorlevel%==1 call :winver
 if %errorlevel%==2 call :compinfo
 if %errorlevel%==3 call :autorun
