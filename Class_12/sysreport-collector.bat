@@ -11,7 +11,7 @@ color 0a
 :: Builds one full report file of your PC.
 :: ==========================================
 
-cls
+cls   
 echo ==========================================
 echo      CAROSINE SYSTEM REPORT COLLECTOR
 echo ==========================================
@@ -20,11 +20,11 @@ echo.
 set stamp=%date:~-4%%date:~-10,2%%date:~-7,2%
 set report=SysReport_%stamp%_%random%.txt
 echo [~] Report file: %report%
-echo.
+echo.   
 
 echo Creating report, please wait...
-echo.
-
+echo.  
+   
 echo ============================================ > "%report%"
 echo  CAROSINE SYSTEM REPORT - %date% %time%  >> "%report%"
 echo ============================================ >> "%report%"
@@ -39,13 +39,13 @@ powershell -NoProfile -Command "Get-CimInstance Win32_Processor | Select-Object 
 
 call :section "RAM (GB)"
 powershell -NoProfile -Command "[math]::Round((Get-CimInstance Win32_ComputerSystem).TotalPhysicalMemory/1GB,1)" >> "%report%" 2>nul
-
+   
 call :section "DISKS"
 powershell -NoProfile -Command "Get-CimInstance Win32_LogicalDisk | Select-Object Caption,Size,FreeSpace | Format-List" >> "%report%"
-
+   
 call :section "IP CONFIGURATION"
 ipconfig | findstr /i "IPv4 Gateway Adapter" >> "%report%" 2>nul
-
+   
 call :section "LISTENING PORTS (netstat)"
 netstat -an | findstr "LISTENING" >> "%report%" 2>nul
 
