@@ -2,8 +2,8 @@
 setlocal enabledelayedexpansion
 title System Info Explorer (Class 12)
 color 0a
-
-:: ==========================================
+  
+:: ============================================
 :: CLASS 12 - PART 1: SYSTEM INFO WITH POWERSHELL CIM
 ::
 :: Old Windows used WMIC. New Windows 11 removed it,
@@ -16,13 +16,13 @@ color 0a
 ::   Win32_BIOS            = BIOS
 ::   Win32_PhysicalMemory  = RAM
 ::   Win32_LogicalDisk     = drives
-:: ==========================================
+:: =============================================
 
 :menu
 cls
-echo ==========================================
+echo ============================================
 echo      SYSTEM INFO EXPLORER (CIM)
-echo ==========================================
+echo ============================================
 echo.
 echo  [1] CPU info
 echo  [2] Operating System
